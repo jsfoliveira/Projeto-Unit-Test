@@ -15,13 +15,13 @@
   Comportamento:
   myCounter() // Retorna: [0, 2, 3, 1, 2, 3, 2, 2, 3, 3, 2, 3];
 */
-
+/* RESOLUÇÃO: só mudei o nome da variável do segundo for */
 const myCounter = () => {
   var myArray = [];
   for (var counter = 0; counter <= 3; counter += 1) {
     myArray.push(counter);
-    for (var counter = 2; counter <= 3; counter += 1) {
-      myArray.push(counter);
+    for (var contar = 2; contar <= 3; contar += 1) {
+      myArray.push(contar);
     }
   }
   return myArray;

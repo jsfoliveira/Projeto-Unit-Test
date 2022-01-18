@@ -14,9 +14,9 @@
     estudante.name // Retorna: 'Leandrão, o Lobo Solitário'
     estudante.feedback() // Retorna: 'Eita pessoa boa!'
 */
-
-const createStudent = (nome) => ({
-  nome,
+/* RESOLUÇÃO: o parâmetro tem que ser name e deve retornar um objeto com duas chaves: name e feedback. Eu tentei colocar um valor na chave name, mas vi que não precisa. No feedback tem como valor uma função que retorna a frase descrita. */
+const createStudent = (name) => ({
+  name,
   feedback: () => 'Eita pessoa boa!',
 });
 
