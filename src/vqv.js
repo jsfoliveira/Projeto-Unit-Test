@@ -15,6 +15,7 @@
       trabalho na Trybe e mando muito em programação!
       #VQV!'
 */
+/* RESOLUÇÃO: criei uma função com dois parâmetros: nome e idade. Coloquei um if: se o typeof do nome for diferente de string ou o typeof da idade for diferente de número, deve retornar undefined; caso contrário, deve retornar a frase em template literals */
 const vqv = (nome, idade) => {
   if (typeof nome !== 'string' || typeof idade !== 'number') {
     return undefined;
