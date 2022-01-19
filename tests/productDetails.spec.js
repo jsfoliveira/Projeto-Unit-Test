@@ -42,7 +42,9 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
     /* RESOLUÇÃO: estou verificando se o typeof dos parâmetros é object. */
     expect(typeof productDetails('', '')).toBe('object');
     // Teste se quando passado parâmetros diferentes entre si, os dois objetos também são diferentes entre si.
-
+    /* RESOLUÇÃO: estou verificando se dois parâmetros não são iguais. */
+    expect(productDetails('a', 'b')[0]).not.toEqual(productDetails('c', 'd')[0]);
     // Teste se os dois productIds terminam com 123.
+   
   });
 });
