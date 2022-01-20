@@ -43,8 +43,10 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
     expect(typeof productDetails('', '')).toBe('object');
     // Teste se quando passado parâmetros diferentes entre si, os dois objetos também são diferentes entre si.
     /* RESOLUÇÃO: estou verificando se dois parâmetros não são iguais. */
-    expect(productDetails('a', 'b')[0]).not.toEqual(productDetails('c', 'd')[0]);
+    expect(productDetails('a', 'b')[0]).not.toEqual(productDetails('c', 'd')[1]);
     // Teste se os dois productIds terminam com 123.
-   
+    /* RESOLUÇÃO: eu acessei os dois producId, como se acessa um objeto, através do caminho dele: productDetails['details']['productId']. Depois verifiquei se o valor dele tem 123 no final. Tive ajuda do colega wendryo pra entender como resolvo a questão. */
+    expect(productDetails('a', 'b')[0]['details']['productId']).toBe('a123')
+    expect(productDetails('a', 'b')[1]['details']['productId']).toBe('b123')
   });
 });
