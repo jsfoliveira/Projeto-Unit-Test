@@ -1,4 +1,4 @@
-# 	:woman_technologist: Project Pixels Art
+# 	:woman_technologist: Project Unit Test
 
 Esse projeto contém uma série de informações sobre o que eu aprendi aqui na Trybe ao longo dos blocos do curso de desenvolvimento web da Trybe. <br>
 As habilidades desenvolvidas foram:
